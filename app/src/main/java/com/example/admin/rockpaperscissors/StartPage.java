@@ -3,7 +3,9 @@ package com.example.admin.rockpaperscissors;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +21,6 @@ public class StartPage extends AppCompatActivity {
     TextView textView;
 
     SharedPreferences.Editor editor;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class StartPage extends AppCompatActivity {
 
 
     }
+
 
 
     public void openMain() {
